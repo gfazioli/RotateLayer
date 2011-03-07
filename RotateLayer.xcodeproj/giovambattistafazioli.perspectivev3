@@ -332,14 +332,14 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>E0EC880213259E8A00FB4BFC</string>
+										<string>E0EC88241325A27800FB4BFC</string>
 										<key>history</key>
 										<array>
-											<string>E0D1BD6F12678EA30025CE8C</string>
-											<string>E0D1BD7012678EA30025CE8C</string>
 											<string>E0FC2DC813259CC3007CF711</string>
-											<string>E0EC87F613259E7200FB4BFC</string>
-											<string>E0EC87F713259E7200FB4BFC</string>
+											<string>E0EC88121325A21B00FB4BFC</string>
+											<string>E0EC88131325A21B00FB4BFC</string>
+											<string>E0EC88211325A27800FB4BFC</string>
+											<string>E0EC88221325A27800FB4BFC</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -353,16 +353,16 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {1132, 1098}}</string>
+								<string>{{0, 0}, {1132, 964}}</string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>1098pt</string>
+							<string>964pt</string>
 						</dict>
 						<dict>
 							<key>Proportion</key>
-							<string>68pt</string>
+							<string>202pt</string>
 							<key>Tabs</key>
 							<array>
 								<dict>
@@ -376,7 +376,7 @@
 									<key>GeometryConfiguration</key>
 									<dict>
 										<key>Frame</key>
-										<string>{{10, 27}, {1132, 41}}</string>
+										<string>{{10, 27}, {1132, 175}}</string>
 									</dict>
 									<key>Module</key>
 									<string>XCDetailModule</string>
@@ -430,7 +430,7 @@
 									<key>GeometryConfiguration</key>
 									<dict>
 										<key>Frame</key>
-										<string>{{10, 27}, {1132, 377}}</string>
+										<string>{{10, 27}, {1132, 175}}</string>
 									</dict>
 									<key>Module</key>
 									<string>PBXBuildResultsModule</string>
@@ -518,7 +518,7 @@
 						<key>Frame</key>
 						<string>{{0, 0}, {1468, 468}}</string>
 						<key>RubberWindowFrame</key>
-						<string>678 206 1468 1212 0 0 2560 1418 </string>
+						<string>475 122 1468 1212 0 0 2560 1418 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXDebugCLIModule</string>
@@ -594,10 +594,10 @@
 							<key>Frame</key>
 							<string>{{716, 0}, {752, 339}}</string>
 							<key>RubberWindowFrame</key>
-							<string>678 206 1468 1212 0 0 2560 1418 </string>
+							<string>475 122 1468 1212 0 0 2560 1418 </string>
 						</dict>
 						<key>RubberWindowFrame</key>
-						<string>678 206 1468 1212 0 0 2560 1418 </string>
+						<string>475 122 1468 1212 0 0 2560 1418 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXDebugSessionModule</string>
@@ -664,7 +664,7 @@
 		<string>/Users/giovambattistafazioli/Lavori/Giovambattista Fazioli/Siti e Blog Personali e di Lavoro/saidmade.com/Sorgenti iPhone/_Test/RotateLayer/RotateLayer.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>678 206 1468 1212 0 0 2560 1418 </string>
+	<string>475 122 1468 1212 0 0 2560 1418 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>

@@ -2,29 +2,8 @@
 //  RotateLayerViewController.m
 //  RotateLayer
 //
-//  Created by Giovambattista Fazioli on 14/10/10.
-//  Copyright Saidmade Srl 2010. All rights reserved.
-//
-//  Permission is hereby granted, free of charge, to any person
-//  obtaining a copy of this software and associated documentation
-//  files (the "Software"), to deal in the Software without
-//  restriction, including without limitation the rights to use,
-//  copy, modify, merge, publish, distribute, sublicense, and/or sell
-//  copies of the Software, and to permit persons to whom the
-//  Software is furnished to do so, subject to the following
-//  conditions:
-//
-//  The above copyright notice and this permission notice shall be
-//  included in all copies or substantial portions of the Software.
-//
-//  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
-//  EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
-//  OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
-//  NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
-//  HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
-//  WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
-//  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
-//  OTHER DEALINGS IN THE SOFTWARE.
+//  Created by Giovambattista Fazioli on 08/03/11.
+//  Copyright Saidmade Srl 2011. All rights reserved.
 //
 
 
@@ -39,6 +18,13 @@ CGFloat RadiansToDegrees(CGFloat radians) {return radians * 180/M_PI;};
 
 @implementation RotateLayerViewController
 
+@synthesize viewContainer;
+@synthesize imageView;
+@synthesize sliderX;
+@synthesize sliderY;
+@synthesize sliderZ;
+@synthesize sliderP;
+@synthesize switchTransform;
 
 /*
 // The designated initializer. Override to perform setup that is required before the view is loaded.
@@ -63,30 +49,32 @@ CGFloat RadiansToDegrees(CGFloat radians) {return radians * 180/M_PI;};
     [super viewDidLoad];	
 }
 
-- (IBAction)didSliderChangeValue:(id)sender {
+- (IBAction)didSwitch:(UISwitch *)sender {
+	
+}
 
-#if USE_CATRANSFORM == 1
-	CATransform3D trans = CATransform3DIdentity;
-	
-	trans.m34 = 1.0/[sliderP value];
-	
-	trans = CATransform3DRotate(trans, DegreesToRadians([sliderX value]), 1, 0, 0);
-	trans = CATransform3DRotate(trans, DegreesToRadians([sliderY value]), 0, 1, 0);
-	trans = CATransform3DRotate(trans, DegreesToRadians([sliderZ value]), 0, 0, 1);
-	[viewContainer.layer setTransform:trans]; 
-	
-#else	
-	
-	CALayer *myLayer = viewContainer.layer;
-	
-	// Decommentare la linea qui sotto per modificare il punto di ancoraggio
-	// myLayer.anchorPoint = CGPointMake(0.1f, 0.8f);
+- (IBAction)didSliderChangeValue:(UISlider *)sender {
+
+	if (switchTransform.isOn) {
+		CATransform3D trans = CATransform3DIdentity;
 		
-	[myLayer setValue:[NSNumber numberWithDouble:DegreesToRadians([sliderX value])] forKeyPath:@"transform.rotation.x"];
-	[myLayer setValue:[NSNumber numberWithDouble:DegreesToRadians([sliderY value])] forKeyPath:@"transform.rotation.y"];
-	[myLayer setValue:[NSNumber numberWithDouble:DegreesToRadians([sliderZ value])] forKeyPath:@"transform.rotation.z"];
-
-#endif	
+		trans.m34 = 1.0/[sliderP value];
+		
+		trans = CATransform3DRotate(trans, DegreesToRadians([sliderX value]), 1, 0, 0);
+		trans = CATransform3DRotate(trans, DegreesToRadians([sliderY value]), 0, 1, 0);
+		trans = CATransform3DRotate(trans, DegreesToRadians([sliderZ value]), 0, 0, 1);
+		[viewContainer.layer setTransform:trans]; 
+	} else {
+		CALayer *myLayer = viewContainer.layer;
+		
+		// Decommentare la linea qui sotto per modificare il punto di ancoraggio
+		// myLayer.anchorPoint = CGPointMake(0.1f, 0.8f);
+		
+		[myLayer setValue:[NSNumber numberWithDouble:DegreesToRadians([sliderX value])] forKeyPath:@"transform.rotation.x"];
+		[myLayer setValue:[NSNumber numberWithDouble:DegreesToRadians([sliderY value])] forKeyPath:@"transform.rotation.y"];
+		[myLayer setValue:[NSNumber numberWithDouble:DegreesToRadians([sliderZ value])] forKeyPath:@"transform.rotation.z"];
+		
+	}
 }
 
 
@@ -108,6 +96,12 @@ CGFloat RadiansToDegrees(CGFloat radians) {return radians * 180/M_PI;};
 - (void)viewDidUnload {
 	// Release any retained subviews of the main view.
 	// e.g. self.myOutlet = nil;
+	self.viewContainer = nil;
+	self.imageView = nil;
+	self.sliderX = nil;
+	self.sliderY = nil;
+	self.sliderZ = nil;
+	self.sliderP = nil;
 }
 
 

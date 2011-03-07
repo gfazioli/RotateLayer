@@ -2,45 +2,27 @@
 //  RotateLayerViewController.h
 //  RotateLayer
 //
-//  Created by Giovambattista Fazioli on 14/10/10.
-//  Copyright Saidmade Srl 2010. All rights reserved.
-//
-//  Permission is hereby granted, free of charge, to any person
-//  obtaining a copy of this software and associated documentation
-//  files (the "Software"), to deal in the Software without
-//  restriction, including without limitation the rights to use,
-//  copy, modify, merge, publish, distribute, sublicense, and/or sell
-//  copies of the Software, and to permit persons to whom the
-//  Software is furnished to do so, subject to the following
-//  conditions:
-//
-//  The above copyright notice and this permission notice shall be
-//  included in all copies or substantial portions of the Software.
-//
-//  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
-//  EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
-//  OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
-//  NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
-//  HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
-//  WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
-//  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
-//  OTHER DEALINGS IN THE SOFTWARE.
+//  Created by Giovambattista Fazioli on 08/03/11.
+//  Copyright Saidmade Srl 2011. All rights reserved.
 //
 
 
 #import <UIKit/UIKit.h>
 
 @interface RotateLayerViewController : UIViewController {
-	IBOutlet UIView			*viewContainer;
-	IBOutlet UIImageView	*imageView;
-	
-	IBOutlet UISlider		*sliderX;
-	IBOutlet UISlider		*sliderY;
-	IBOutlet UISlider		*sliderZ;
-	IBOutlet UISlider		*sliderP;
+
 }
 
-- (IBAction)didSliderChangeValue:(id)sender;
+@property(nonatomic, retain) IBOutlet UIView *viewContainer;
+@property(nonatomic, retain) IBOutlet UIImageView *imageView;
+@property(nonatomic, retain) IBOutlet UISlider *sliderX;
+@property(nonatomic, retain) IBOutlet UISlider *sliderY;
+@property(nonatomic, retain) IBOutlet UISlider *sliderZ;
+@property(nonatomic, retain) IBOutlet UISlider *sliderP;
+@property(nonatomic, retain) IBOutlet UISwitch *switchTransform;
+
+- (IBAction)didSliderChangeValue:(UISlider *)sender;
+- (IBAction)didSwitch:(UISwitch *)sender;
 
 @end
 
