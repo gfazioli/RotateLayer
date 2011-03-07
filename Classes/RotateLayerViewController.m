@@ -68,6 +68,8 @@ CGFloat RadiansToDegrees(CGFloat radians) {return radians * 180/M_PI;};
 #if USE_CATRANSFORM == 1
 	CATransform3D trans = CATransform3DIdentity;
 	
+	trans.m34 = 1.0/[sliderP value];
+	
 	trans = CATransform3DRotate(trans, DegreesToRadians([sliderX value]), 1, 0, 0);
 	trans = CATransform3DRotate(trans, DegreesToRadians([sliderY value]), 0, 1, 0);
 	trans = CATransform3DRotate(trans, DegreesToRadians([sliderZ value]), 0, 0, 1);
@@ -76,7 +78,7 @@ CGFloat RadiansToDegrees(CGFloat radians) {return radians * 180/M_PI;};
 #else	
 	
 	CALayer *myLayer = viewContainer.layer;
-
+	
 	// Decommentare la linea qui sotto per modificare il punto di ancoraggio
 	// myLayer.anchorPoint = CGPointMake(0.1f, 0.8f);
 		

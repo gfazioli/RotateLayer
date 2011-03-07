@@ -22,16 +22,16 @@
 	};
 	28D7ACF60DDB3853001CB0EB /* RotateLayerViewController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1071, 782}}";
-			sepNavSelRange = "{878, 0}";
-			sepNavVisRange = "{3, 1561}";
+			sepNavIntBoundsRect = "{{0, 0}, {1071, 1066}}";
+			sepNavSelRange = "{1538, 0}";
+			sepNavVisRange = "{0, 1595}";
 		};
 	};
 	28D7ACF70DDB3853001CB0EB /* RotateLayerViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1071, 1836}}";
-			sepNavSelRange = "{2267, 0}";
-			sepNavVisRange = "{1885, 1440}";
+			sepNavIntBoundsRect = "{{0, 0}, {1071, 1921}}";
+			sepNavSelRange = "{2294, 0}";
+			sepNavVisRange = "{1561, 2064}";
 			sepNavWindowFrame = "{{15, 175}, {1739, 1238}}";
 		};
 	};
@@ -108,16 +108,22 @@
 					PBXFileDataSource_Target_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 321231954;
-			PBXWorkspaceStateSaveDate = 321231954;
+			PBXPerProjectTemplateStateSaveDate = 321232352;
+			PBXWorkspaceStateSaveDate = 321232352;
 		};
 		perUserProjectItems = {
-			E0D1BD6F12678EA30025CE8C /* PBXTextBookmark */ = E0D1BD6F12678EA30025CE8C /* PBXTextBookmark */;
-			E0D1BD7012678EA30025CE8C /* PBXTextBookmark */ = E0D1BD7012678EA30025CE8C /* PBXTextBookmark */;
-			E0D1BD99126799FC0025CE8C /* PBXTextBookmark */ = E0D1BD99126799FC0025CE8C /* PBXTextBookmark */;
-			E0FC2DC813259CC3007CF711 /* PBXTextBookmark */ = E0FC2DC813259CC3007CF711 /* PBXTextBookmark */;
-			E0FC2DCD13259CD5007CF711 /* PBXTextBookmark */ = E0FC2DCD13259CD5007CF711 /* PBXTextBookmark */;
-			E0FC2DCE13259CE3007CF711 /* PBXTextBookmark */ = E0FC2DCE13259CE3007CF711 /* PBXTextBookmark */;
+			E0D1BD6F12678EA30025CE8C = E0D1BD6F12678EA30025CE8C /* PBXTextBookmark */;
+			E0D1BD7012678EA30025CE8C = E0D1BD7012678EA30025CE8C /* PBXTextBookmark */;
+			E0D1BD99126799FC0025CE8C = E0D1BD99126799FC0025CE8C /* PBXTextBookmark */;
+			E0EC87E713259DE300FB4BFC /* PBXTextBookmark */ = E0EC87E713259DE300FB4BFC /* PBXTextBookmark */;
+			E0EC87F613259E7200FB4BFC /* PBXTextBookmark */ = E0EC87F613259E7200FB4BFC /* PBXTextBookmark */;
+			E0EC87F713259E7200FB4BFC /* PBXTextBookmark */ = E0EC87F713259E7200FB4BFC /* PBXTextBookmark */;
+			E0EC87F813259E7200FB4BFC /* PBXTextBookmark */ = E0EC87F813259E7200FB4BFC /* PBXTextBookmark */;
+			E0EC880113259E8900FB4BFC /* PBXTextBookmark */ = E0EC880113259E8900FB4BFC /* PBXTextBookmark */;
+			E0EC880213259E8A00FB4BFC /* PBXTextBookmark */ = E0EC880213259E8A00FB4BFC /* PBXTextBookmark */;
+			E0FC2DC813259CC3007CF711 = E0FC2DC813259CC3007CF711 /* PBXTextBookmark */;
+			E0FC2DCD13259CD5007CF711 = E0FC2DCD13259CD5007CF711 /* PBXTextBookmark */;
+			E0FC2DCE13259CE3007CF711 = E0FC2DCE13259CE3007CF711 /* PBXTextBookmark */;
 		};
 		sourceControlManager = E057316C122FC9BB00C5E478 /* Source Control */;
 		userBuildSettings = {
@@ -201,6 +207,66 @@
 		rType = 0;
 		vrLen = 1561;
 		vrLoc = 3;
+	};
+	E0EC87E713259DE300FB4BFC /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* RotateLayerViewController.m */;
+		name = "RotateLayerViewController.m: 70";
+		rLen = 0;
+		rLoc = 2267;
+		rType = 0;
+		vrLen = 1395;
+		vrLoc = 1885;
+	};
+	E0EC87F613259E7200FB4BFC /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF60DDB3853001CB0EB /* RotateLayerViewController.h */;
+		name = "RotateLayerViewController.h: 40";
+		rLen = 0;
+		rLoc = 1538;
+		rType = 0;
+		vrLen = 1595;
+		vrLoc = 0;
+	};
+	E0EC87F713259E7200FB4BFC /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* RotateLayerViewController.m */;
+		name = "RotateLayerViewController.m: 70";
+		rLen = 0;
+		rLoc = 2267;
+		rType = 0;
+		vrLen = 1395;
+		vrLoc = 1885;
+	};
+	E0EC87F813259E7200FB4BFC /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* RotateLayerViewController.m */;
+		name = "RotateLayerViewController.m: 71";
+		rLen = 0;
+		rLoc = 2294;
+		rType = 0;
+		vrLen = 2067;
+		vrLoc = 1561;
+	};
+	E0EC880113259E8900FB4BFC /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* RotateLayerViewController.m */;
+		name = "RotateLayerViewController.m: 71";
+		rLen = 0;
+		rLoc = 2294;
+		rType = 0;
+		vrLen = 2067;
+		vrLoc = 1561;
+	};
+	E0EC880213259E8A00FB4BFC /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* RotateLayerViewController.m */;
+		name = "RotateLayerViewController.m: 71";
+		rLen = 0;
+		rLoc = 2294;
+		rType = 0;
+		vrLen = 2064;
+		vrLoc = 1561;
 	};
 	E0FC2DC813259CC3007CF711 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;

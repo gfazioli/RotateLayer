@@ -37,6 +37,7 @@
 	IBOutlet UISlider		*sliderX;
 	IBOutlet UISlider		*sliderY;
 	IBOutlet UISlider		*sliderZ;
+	IBOutlet UISlider		*sliderP;
 }
 
 - (IBAction)didSliderChangeValue:(id)sender;
